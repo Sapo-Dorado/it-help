@@ -1,0 +1,8 @@
+<%= case @stage do %>
+  <% 0 -> %>
+    <%= home(assigns) %>
+  <% 1 -> %>
+    <%= question(assigns) %>
+  <% 2 -> %>
+    <%= answer(assigns) %>
+<% end %>
