@@ -10,8 +10,12 @@ defmodule ItWeb.HomeLive do
   def question(assigns) do
     ~L"""
     <%= f = form_for :problem, "#", [phx_submit: "answered"]%>
-      <%= label f, :info, "What seems to be the problem?"%>
-      <%= textarea f, :info %>
+    <%= label f, :info, "What seems to be the problem?"%>
+    <br>
+    <br>    
+    <%= textarea f, :info %>
+    <br>
+    <br> 
       <%= submit "Enter"%>
     </form>
     """
